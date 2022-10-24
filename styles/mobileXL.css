@@ -1,0 +1,127 @@
+.tabletHide{
+    display: none !important;
+}
+
+.tabletShow{
+    display: initial !important;
+}
+
+#logoImg{
+    flex: 0 1 100%;
+    align-self: center;
+    max-width: 700px;
+    margin: 0px auto
+}
+
+.splitLeft h1{
+    font-size: 38px;
+}
+
+.splitLeft h2, .splitLeft .bottomText a.locationLink{
+    font-size: 20px;
+}
+
+header div.mobileWrap{
+    margin-right: 0px;
+}
+
+header nav{
+    margin-left: 0px;
+    margin-top: 15px;
+    flex: 0 2 100%;
+}
+header nav a.navBtn{
+    margin-left: auto;
+}
+
+span.quoteLong{
+    display: none;
+}
+
+.splitLeft h2{
+    margin: 5px auto;
+}
+
+.splitRight img{
+    margin: 0px auto;
+}
+
+.splitLeft .splitLinks a{
+    flex-basis: 80px;
+}
+
+h1.sectionHeader span{
+    display: none;
+}
+
+/* Our services section */
+
+#our_services div.sectionWrapper{
+    flex-direction: column;
+}
+
+#our_services div.sectionWrapper div.servicesItem{
+    text-align: center !important;
+}
+
+#our_services div.sectionWrapper div.servicesItem h2{
+    text-align: left;
+}
+
+#our_services div.sectionWrapper div.servicesItem .servicesDesc{
+    display: inline-block !important;
+    width: min-content;
+    min-width: 265px;
+}
+
+#our_services div.sectionWrapper div.servicesItem:nth-child(even) i{
+    margin-left: 0px;
+    float: none;
+}
+
+#our_services div.sectionWrapper div.servicesItem ul{
+    min-width: max-content;
+    padding: 0px 0px 0px 25px !important;
+    direction: initial !important;
+}
+
+#our_services div.sectionWrapper div.servicesItem ul li{
+    text-align: left !important;
+}
+
+/* Faqs section */
+
+h1.sectionHeader.sh_faqs{
+    border-bottom: none;
+}
+
+/* Footer section */
+
+footer iframe{
+    width: 200px;
+    height: 200px;
+}
+
+footer ul{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+footer ul li.mobileHide{
+    display: none;
+}
+
+footer ul li:first-child{
+    margin-top: 0px;
+}
+
+footer .footerRight ul li{
+    font-size: 16px;
+    min-width: 200px;
+    padding: 0px 0px 20px 15px;
+}
+
+footer .footerRight i{
+    font-size: 18px;
+    margin-right: 10px;
+}

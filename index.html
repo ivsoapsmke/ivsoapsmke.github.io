@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>iRepairWireless | Phone & Electronic repair</title>
+    <meta name="description" content="iRepairWireless Phone and Electronic repair">
+    <meta name="author" content="iRepairWireless">
+
+    <meta property="og:title" content="iRepairWireless | Phone & Electronic repair">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="iRepairWireless | Phone and Electronic repair">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" media="(max-width:1023px)" href="styles/mobileXL.css">
+    <link rel="stylesheet" media="(max-width:617px)" href="styles/mobile.css">
+    <script src="js/main.js"></script>
+
+    <script src="https://kit.fontawesome.com/4556812e68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img id="logoImg" src="assets/logo.png" alt="iRepairWireless Logo Image">
+        <nav>
+            <div id="navMenu" class="mobileWrap">
+                <a onclick="toggleMobileMenu('menuToggle')" class="mobileMenu" href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+                <a class="navItem menuToggle" href="#our_services">Our Services</a>
+                <a class="navItem menuToggle navLast" href="#cases_link">Cases & Accessories</a>
+            </div>
+            <div class="mobileWrap navRight">
+                <a class="navBtn" href="#contact_us">Contact<i class="fa-solid fa-phone"></i></a>
+                <a class="navBtn quoteBtn menuToggle" href="#contact_us" onclick="toggleForm(this, 'quote')"><span class="quoteLong">Get a </span>Quote<i class="fa-solid fa-calculator"></i></a>    
+            </div>
+        </nav>
+    </header>
+    <section class="splitSection">
+        <div class="splitLeft">
+            <div class="splitHeading">
+                <h1>iRepairWireless Milwaukee</h1>
+                <h2>South Side MKE repair shop specializing in the repair of smart phones, tablets, gaming consoles and more! We carry a large variety of iPhone and Android cases in stock, as well as many other phone accessories!</h2>   
+            </div>
+            <div class="splitLinks">
+                <a href="tel:+14147632556" class="phoneLink"><i style="margin-right: 10px" class="fa-solid fa-phone"></i><span class="tabletShow">Call</span><span class="tabletHide">414-763-2556</span></a>
+                <a href="#faqs" class="phoneLink"><i style="margin-right: 10px" class="fa-solid fa-arrow-right"></i>FAQs</a>
+                <a href="#recentReviewsFocus" class="phoneLink tabletHide"><i style="margin-right: 10px" class="fa-solid fa-arrow-right"></i>Reviews</a>
+            </div>
+            <div class="bottomText">
+                <h2>Check out our recent projects or visit us in store!<span style="margin-right: 10px;"></span><a href="" class="locationLink"><i class="fa-solid fa-location-dot"></i>3920 s 27th st</a></h2>
+            </div>
+            <!-- <a><i class="fa-solid fa-location-dot"></i>Located inside Monterey Market at 3920 s 27th street, Milwaukee WI 53221</a> !-->
+        </div>
+        <div class="splitRight">
+            <img src="assets/headerImg.png">
+        </div>
+    </section>
+    <h1 id="our_services" class="sectionHeader"><span style="margin-right: 15px;"></span>Our Services<span style="margin-left: 15px;"></span></h1>
+    <section id="our_services" class="mainSection">
+        <div class="sectionWrapper">
+            <div class="servicesItem">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <div class="servicesDesc">
+                    <h2>Phone repair</h2>
+                    <ul>
+                        <li>iPhone and Android repair</li>
+                        <li>LCD & Glass replacement</li>
+                        <li>Battery replacement</li>
+                        <li>Charging port repair</li>
+                        <li>Home button replacement</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="servicesItem">
+                <i class="fa-solid fa-laptop"></i>
+                <div class="servicesDesc">
+                    <h2>Computer repair</h2>
+                    <ul>
+                        <li>PC and Laptop repair</li>
+                        <li>Screen replacement</li>
+                        <li>Computer diagnostics</li>
+                        <li>Battery replacement</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="servicesItem">
+                <i class="fa-solid fa-gamepad"></i>
+                <div class="servicesDesc">
+                    <h2>Console repair</h2>
+                    <ul>
+                        <li>Ps5 and Xbox repair</li>
+                        <li>Nintento switch repair</li>
+                        <li>Fix console overheating</li>
+                        <li>HDMI port fix</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="servicesItem">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <div class="servicesDesc">
+                    <h2>Special Services</h2>
+                    <ul>
+                        <li>Password recovery</li>
+                        <li>Phone housing replacement</li>
+                        <li>Custom light up apple logo (Iphone 6/7)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="cases_link" class="servicesImg mobileHide">
+            <h2>Visit the shop or call us today!</h2>
+            <img alt="Repair Bench Picture">
+            <div class="servicesImg_bottom">
+                <h2>Screen replacement starting at $89.99</h2>
+                <h2>Charging port repair starting at $69.99</h2>
+            </div>
+        </div>
+        <div id="cases">
+            <h3 onclick="siblingSlide(this)">Check out our phone cases and accessories<i class="fa-solid fa-angle-down jiggleClass"></i></h2>
+            <div class="caseShowcase showcaseSlide">
+                <div class="casePic">
+                    <img src="" alt="">
+                </div>
+                <div class="casePic">
+                    <img src="" alt="">
+                </div>
+                <div class="casePic">
+                    <img src="" alt="">
+                </div>
+                <div class="casePic">
+                    <img src="" alt="">
+                </div>
+                <div class="casePic">
+                    <img src="" alt="">
+                </div>
+                <div class="picShade left">
+                    <i onclick="caseSlider(this,'left')" class="fa-solid fa-angles-left"></i>
+                </div>
+                <div class="picShade right">
+                    <i onclick="caseSlider(this,'right')" class="fa-solid fa-angles-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="sectionHeader"><span style="margin-right: 15px;"></span>Recently Repaired<span style="margin-left: 15px;"></span></h1>
+    <section class="mainSection">
+        <div id="recentProjects">
+            <!--<div class="imgWrapper">
+                <i class="fa-solid fa-images"></i>
+                <div class="projectImages">
+                    <img src="assets/site_images/1x1.png" style="background-image: url('assets/site_images/pic3_scale.jpg'); background-size: cover;" class="bottomImg">
+                    <img src="assets/site_images/1x1.png" style="background-image: url('assets/site_images/pic2_scale.jpg'); background-size: cover;" class="midImg">
+                    <img src="assets/site_images/1x1.png" style="background-image: url('assets/site_images/pic1_scale.jpg'); background-size: cover; background-position: 48%;" class="topImg">
+                </div>
+            </div>!-->
+            <div class="imgWrapper" id="showcase">
+                <div class="projectImages">
+                    <img id="img_1" src="assets/site_images/1x1.png" style="background-image: url('assets/showcase/main/pic1_scale.jpg');" class="projectSlide">
+                    <img id="img_2" src="assets/site_images/1x1.png" style="background-image: url('assets/showcase/main/pic2_scale.jpg');" class="projectSlide">
+                    <img id="img_3" src="assets/site_images/1x1.png" style="background-image: url('assets/showcase/main/pic3_scale.jpg');" class="projectSlide">
+                </div>
+            </div>
+            <div class="projectDescription">
+                <div class="projectNav">
+                    <div>
+                        <i class="fa-solid fa-arrow-left-long" id="showcase_left"></i>
+                        <p>Next <span class="mobileHide">image</span></p>
+                        <i class="fa-solid fa-arrow-right-long" id="showcase_right"></i>
+                    </div>
+                    <a>Next Project</a>
+                </div>
+                <h2 id="recentReviewsFocus"><span>Device:</span>Moto G Phone</h2>
+                <h2><span>Issue:</span>Screen repair</h2>
+                <!-- <h2><span>Repair:</span>Replaced the cracked screen with a new one and tested it</h2>!-->
+                <p>To see more repairs check us out on Tiktok</p>
+                <a href="https://www.tiktok.com/@irepairwireless" class="tikTokRef"><i class="fa-brands fa-tiktok"></i>iRepairWirelessMKE</a>
+                <div id="recentReviews">
+                    <h2>Recently Reviewed</h2>
+                    <div class="reviewItem">
+                        <p><i class="fa-solid fa-comments"></i>Everytime I visit iRepairWireless Adolfo always got the answers for me, he's a real one!!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 id="faqs" class="sectionHeader sh_faqs"><span style="margin-right: 15px;"></span>FAQs<span style="margin-left: 15px;"></span><p class="miniTitle">(Frequently Asked Questions)</p></h1>
+    <section class="mainSection">
+        <ul class="faqList">
+            <li>
+                <p onclick="mobileSlideHide(this, 'faqAnswer')">Do you fix water damaged phones?<span class="mobileShow"><i class="fa-solid fa-angles-down"></i></span></p>
+                <div class="faqAnswer">
+                    <p>We currently can not repair water damaged phones.</p>
+                </div>
+            </li>
+            <li class="mobileSlideHide">
+                <p onclick="mobileSlideHide(this, 'faqAnswer')">Do you buy phones?<span class="mobileShow"><i class="fa-solid fa-angles-down"></i></span></p>
+                <div class="faqAnswer_wrapper">
+                    <div class="faqAnswer">
+                        <p>Yes depending on the model and condition, as well as damaged phones, locked or unlocked.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="mobileSlideHide">
+                <p onclick="mobileSlideHide(this, 'faqAnswer')">Do you only repair phones?<span class="mobileShow"><i class="fa-solid fa-angles-down"></i></span></p>
+                <div class="faqAnswer_wrapper">
+                    <div class="faqAnswer">
+                        <p>We repair many types of electronics including: iPods, laptops, PCs, Xbox, Playstion, and Nintendo consoles.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="mobileSlideHide">
+                <p onclick="mobileSlideHide(this, 'faqAnswer')">Do you fix software issues?<span class="mobileShow"><i class="fa-solid fa-angles-down"></i></span></p>
+                <div class="faqAnswer_wrapper">
+                    <div class="faqAnswer">
+                        <p>We do fix software issues with phones, consoles, laptops and PCs</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <h1 id="contact_us" class="sectionHeader"><div class="btnContainer"><a class="btnSelected" id="contact_btn" onclick="toggleForm(this, 'contact')">Contact</a><a id="quote_btn" onclick="toggleForm(this, 'quote')">Quote</a></div></h1>
+    <section class="mainSection">
+        <form id="contact_form" action="https://formspree.io/f/mwkyrblq" method="POST">
+            <fieldset>
+                <div class="fieldRow">
+                    <label for="fName">Full Name</label>
+                    <input id="fName" name="name" type="text">
+                </div>
+                <div class="fieldRow">
+                    <label for="email">Email</label>
+                    <input name="_replyto" type="email">
+                </div>
+                <div class="fieldRow">
+                    <label for="phone">Phone #</label>
+                    <input name="tel" type="tel">
+                </div>
+                <fieldset id="quote_form" class="formDisabled" disabled>
+                    <div class="fieldRow quoteFields">
+                        <label for="device_type">Device type</label>
+                        <select name="device_type" title="Device Type">
+                            <optgroup label="Mobile Phone">
+                                <option value="android_phone">Android</option>
+                                <option value="iphone">Iphone</option>
+                                <option value="other_phone">Other - Phone</option>
+                            </optgroup>
+                            <optgroup label="Tablet">
+                                <option value="android_tablet">Android</option>
+                                <option value="ipad">iPad</option>
+                                <option value="other_tablet">Other - Tablet</option>
+                            </optgroup>
+                            <optgroup label="Game Console">
+                                <option value="xbox_series_x">Xbox Series X</option>
+                                <option value="xbox_360">Xbox 360</option>
+                                <option value="ps5">Playstation 5</option>
+                                <option value="ps4">Playstation 4</option>
+                                <option value="ps4">Playstation 3</option>
+                                <option value="nintendo_switch">Nintendo Switch</option>
+                                <option value="other_console">Other - Console</option>
+                            </optgroup>
+                            <optgroup label="Computer">
+                                <option value="laptop">Laptop</option>
+                                <option value="desktop_pc">Desktop PC</option>
+                            </optgroup>
+                            <option value="other_device">Other Device</option>
+                        </select>
+                        <br class="mobileHide">
+                        <label for="device_issue">Issue</label>
+                        <select name="device_issue" title="Device Issue">
+                            <option value="broken_glass">Broken Screen/Glass</option>
+                            <option value="battery_issue">Battery Issue</option>
+                            <option value="charging_issue">Charging Issue</option>
+                            <option value="device_overheating">Device overheating</option>
+                            <option value="no_power">Device not powering on</option>
+                            <option value="other_issue">Other issue</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div class="fieldRow">
+                    <label for="message">Comments</label>
+                    <br>
+                    <textarea name="message" rows="5" placeholder="Questions, comments, concerns..."></textarea>
+                </div>
+                <button type="submit">Submit<i class="fa-solid fa-angle-right"></i></button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7drcvMQQBYgRbcUZT51dOOI&key=AIzaSyAyAKAejN-nMXPXQvT5I0SzrpdpdKUbCk4"></iframe>
+        <ul>
+            <li>iRepairWireless</li>
+            <li>3920 South 27th Street</li>
+            <li>Milwaukee, WI 53221</li>
+            <li>Inside of Monterey Market</li>
+            <li class="hoursLi mobileHide">Hours:</li>
+            <li class="hoursLi">Mon-Sat: 11am-6pm</li>
+            <li class="hoursLi">Sunday: 12pm-5pm</li>
+        </ul>
+        <div class="footerRight">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-square"></i></i>iRepairWireless</a></li>
+                <li><a href="mailto:iRepairWireless96@gmail.com"><i class="fa-solid fa-square-envelope"></i>iRepairWireless96&#8203;@gmail.com</a></li>
+                <li><a href="tel:+14147632556"><i class="fa-solid fa-square-phone"></i>414-763-2556</a></li>
+            </ul>
+            <p>Copyright 2022 iRepairWireless</p>
+        </div>
+    </footer>
+    <!-- Futuristic BG Image by <a href="https://pixabay.com/users/sentientcollector-5259855/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2816457">SentientCollector</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2816457">Pixabay</a> !-->
+    <!-- Geometric BG Image by <a href="https://pixabay.com/users/sambeetarts-1339110/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1732847">Sambeet D</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1732847">Pixabay</a>-->
+</body>
+</html>

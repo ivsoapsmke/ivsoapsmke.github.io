@@ -1,0 +1,360 @@
+/* Body and header styles */
+
+body{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    /* background-image: url("../assets/bgtile.png");*/
+    background-color: #192649;
+    margin: 0px;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, .4); /*#0f172c*/
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Nav Styles */
+
+header a.mobileMenu{
+    display: none;
+}
+
+header nav{
+    display: inline-flex;
+    margin-bottom: 10px;
+    margin-left: auto;
+    position: relative;
+}
+
+#logoImg{
+    margin: 0px 15px;
+    width: 400px;
+    transition: .5s width;
+}
+
+header div.mobileWrap{
+    display: flex;
+    margin-right: 15px;
+    transition: .5s max-height;
+}
+
+header div.mobileWrap.navRight{
+    margin-right: 0px;
+}
+
+header nav a{
+    display: inline-block;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    /* border-right: 1px solid #3bfd00; */
+    border: 1px solid transparent;
+    border-left-width: 0px;
+    border-right-color: #3bfd0077;
+}
+
+header nav a.navLast{
+    border-right: 0px;
+}
+
+header nav div.navRight{
+    margin-left: auto;
+}
+
+header nav a.navBtn i{
+    /*background-color: #3bfd0013;
+    border: 1px solid #3bfd0077;*/
+    margin-right: 10px;
+}
+header nav a.navBtn i.mobileShow{
+    display: none;
+}
+
+header nav a.quoteBtn i{
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+header nav a:hover{
+    background-color: #3bfd0013;
+    /* color: #3bfd0077; */
+}
+
+header nav a.navBtn:hover{
+    color: #3bfd0077;
+}
+
+/* Main Section Styles */
+
+section{
+    background-color: rgba(0, 0, 0, .2);
+    padding: 20px 15px;
+    margin: 30px 0px;
+    color: white;
+}
+
+section h1{
+    font-weight: lighter;
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+section.splitSection{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.splitLeft{
+    text-align: left;
+    padding: 15px 15px 0px 15px;
+    display: inline-flex;
+    flex-direction: column;
+    flex: 2 0 260px;
+}
+
+.splitLeft h2{
+    font-weight: lighter;
+    margin: 15px auto;
+}
+
+.splitLeft .splitLinks{
+    margin-bottom: 15px;
+}
+
+.splitLeft .splitLinks a{
+    margin-top: 15px;
+}
+
+.splitLeft .splitLinks a.phoneLink{
+    background-color: rgba(0,0,0, .5);
+    border: 1px solid white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: inline-block;
+    /* : #3bfd0077; */
+}
+
+.splitLeft .splitLinks a.phoneLink:last-child{
+    margin-right: 0px;
+}
+
+.splitLeft .bottomText{
+    margin-top: auto;
+}
+
+.splitLeft .bottomText h2{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.splitLeft .bottomText a.locationLink{
+    display: inline;
+    font-size: 1.5em;
+}
+
+.splitLeft .bottomText a.locationLink i{
+    white-space: nowrap;
+    display: inline;
+    margin-right: 5px;
+}
+
+.splitRight{
+    flex: 1 0 303px;
+    padding: 15px 15px 0px 15px;
+}
+
+.splitRight img{
+    margin-left: auto;
+    display: block;
+    width: 100%;
+    max-width: 580px;
+    min-width: 350px;
+}
+
+/*.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}*/
+
+section.mainSection h1{
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+section.mainSection h1 span{
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 1px solid white;
+}
+
+blockquote.tiktok-embed{
+    max-width: 380px;
+    min-width: 325px;
+    display: inline-block;
+    width: auto;
+    height: 576px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/*
+section.mainSection .showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.mainSection .showcase .shItem{
+    background-image: url(../assets/repairBench.png);
+    background-size: cover;
+    height: 380px;
+    opacity: .5;
+    flex: 1 0 auto;
+    border: 2px outset white;
+    margin: 10px 20px;
+    position: relative;
+}
+
+section.mainSection .showcase .shItem.middle{
+    flex: 1.5 0 auto;
+    height: 460px;
+    opacity: 1;
+}
+
+section.mainSection .showcase .shItem img{
+    width: 250px;
+    height: auto
+}
+
+section.mainSection .showcase .shItem p{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px auto;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, .8);
+}
+*/
+
+/* FAQs Styles */
+
+section.mainSection p.miniTitle{
+    margin-top: 0px;
+}
+
+section.mainSection ul.faqList{
+    list-style-type: none;
+    display: block;
+    margin: 0px auto;
+    max-width: 900px;
+    padding: 0px 30px;
+    margin-top: 25px;
+}
+
+section.mainSection ul.faqList li{
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0, .8);
+    padding: 15px 10px;
+    text-align: left;
+    margin: 15px 0px;
+    background-color: rgba(0,0,0, .2);
+}
+
+section.mainSection ul.faqList li .faqAnswer{
+    margin-top: 10px;
+}
+
+section.mainSection ul.faqList li .faqAnswer p{
+    margin: 10px auto;
+}
+
+/* Footer Styles */
+
+footer{
+    background-color: rgba(0, 0, 0, .4);
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    display: flex;
+}
+
+footer iframe{
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+    border: 0;
+}
+
+footer ul{
+    align-items: flex-start;
+    list-style-type: none;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 25px;
+    margin-top: 0px;
+}
+
+footer ul li{
+    margin-top: 10px;
+}
+footer ul li:first-child{
+    margin-top: 5px;
+}
+
+footer ul li.hoursLi{
+    font-size: 14px
+}
+
+footer .footerRight{
+    margin-left: auto;
+    position: relative;
+}
+
+footer .footerRight ul{
+    padding-left: 0px;
+}
+
+footer .footerRight ul li{
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+footer .footerRight i{
+    margin-right: 15px;
+    color: #3bfd0077;
+    font-size: 24px;
+}
+
+footer .footerRight a:hover{
+    color: #3bfd0077;
+}
+
+footer .footerRight p{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    font-size: 13px;
+}
+
+@media(max-width: 1106px){
+    #logoImg{
+        width: 300px;
+    }
+}
