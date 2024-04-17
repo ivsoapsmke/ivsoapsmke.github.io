@@ -20,59 +20,45 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" media="(max-width:1023px)" href="styles/mobileXL.css">
-    <link rel="stylesheet" media="(max-width:617px)" href="styles/mobile.css">
+    <!--<link rel="stylesheet" media="(max-width:617px)" href="styles/mobile.css">!-->
     <script src="js/main.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="/assets/logo.png">
-            <div>
-                <a href="#about_us">About</a>
-                <a href="#our_services">Our Services</a>
-                <!-- <a href="#accessories">Cases & Accessories</a> !-->
-                <a href="#contact_form">Contact</a>
-            </div>
-            <div id="navBtn">
-                <a href="#quote_form">Get a quote</a>
-            </div>
-        </nav>
-        <div id="landing">
-            <div id="landingLeft">
-                <h1>Cell Phone Repair<br>That Comes to You</h1>
-                <p>Check out our recent projects or visit us in store</p>
-                <div id="landingContact">
-                    <a href="tel:+14147632556"><img src="assets/svg/contact.svg" />414-763-2556</a>
-                    <a href="#contact_form" class="smallContact">Contact Us<img src="assets/svg/contactArrow.svg" /></a>
+    <div id="bgWrap">
+        <header>
+            <nav>
+                <img src="/assets/logo.png">
+                <div>
+                    <a href="#about_us">About</a>
+                    <a href="#our_services"><span class="xlHide">Our</span> Services</a>
+                    <a href="#contact_form">Contact</a>
                 </div>
-            </div>
-            <div id="landingRight">
-                <div class="landingContainer">
-                    <div id="phoneBg"></div>
-                    <div id="phoneBG_linkWrap">
-                        <a href="https://www.tiktok.com/@irepairwirelessllc"><img width="30" src="/assets/tiktok-logo.png"><span>iRepairWirelessMKE</span></a>
+                <div id="navBtn">
+                    <a href="#quote_form">Get a quote</a>
+                </div>
+            </nav>
+            <div id="landing">
+                <div id="landingLeft">
+                    <h1>Quality Cell Phone & Electronic Repair</h1>
+                    <p>iRepairWireless - specializing in the repair of smart phones, tablets, gaming consoles and more! We carry a large variety of iPhone and Android cases in stock, as well as many other phone accessories!</p>
+                    <div id="landingContact">
+                        <a href="tel:+14147632556"><img src="assets/svg/contact.svg" />414-763-2556</a>
+                        <a href="#contact_form" class="smallContact">Contact Us<img src="assets/svg/contactArrow.svg" /></a>
                     </div>
-                    <img src="assets/landingPhone.png">
+                </div>
+                <div id="landingRight">
+                    <div class="phoneBG">
+                        <div id="phoneBG_linkWrap">
+                            <a href="https://www.tiktok.com/@irepairwirelessllc">
+                                <img width="30" src="/assets/tiktok-logo.png">
+                                <span>iRepairWirelessMKE</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section id="about_us">
-        <div id="about_imgWrap">
-            <div></div>
-            <img width="400" src="/assets/about_1.png">
-            <img class="sideImg" width="180" src="/assets/about_2.png">
-            <img class="sideImg" width="180" src="/assets/about_3.png">
-        </div>
-        <div id="about_text">
-            <h2>About Us</h2>
-            <h1>Tech Solutions You Can Trust</h1>
-            <p>South Side MKE repair shop specializing in the repair of smart phones, tablets, gaming consoles and more! We carry a large variety of iPhone and Android cases in stock, as well as many other phone accessories!</p>
-        </div>
-    </section>
-    <section id="our_services">
+        </header>
         <h2>Our Services</h2>
-        <h1>Wrapped Up With<br /> Great Service</h1>
         <div id="services_wrapper">
             <div class="service_box">
                 <img src="assets/svg/phone.svg" />
@@ -116,6 +102,8 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <section id="our_services">
         <div id="img_contain">
             <div class="fadeTop"></div>
             <img src="assets/bigPhone.png" />
@@ -126,26 +114,6 @@
                 <p><img src="assets/svg/circle.svg" /><img src="assets/svg/circlecheck.svg" />Charging port repair starting at $69.99</p>
             </div>
         </div>
-    </section>
-    <section id="repaired">
-        <h1>Recently Repaired</h1>
-        <div class="repaired_wrapper">
-            <a><img src="assets/svg/leftArrow.svg" /></a>
-            <div class="repaired_slides">
-                <img src="assets/site_images/pic1.jpg" />
-                <img src="assets/site_images/pic2.jpg" />
-                <img src="assets/site_images/pic3.jpg" />
-                <p><span>Device: </span>Moto G Phone<span>Issue: </span>Screen repair</p>
-            </div>
-            <a><img src="assets/svg/rightArrow.svg" /></a>
-        </div>
-        <div id="repaired_dots">
-            <a></a>
-            <a class="active"></a>
-            <a></a>
-        </div>
-        <h2>To See More Repairs Check Us Out On Tiktok</h2>
-        <a href="https://www.tiktok.com/@irepairwirelessllc"><img src="/assets/tiktok-logo.png">iRepairWirelessMKE</a>
     </section>
     <section id="faqs">
         <h2>FAQs</h2>
@@ -190,10 +158,19 @@
                 <div class="button_container"><button type="submit">Submit</button></div>
             </fieldset>
         </form>
-        <img src="assets/placeholder1.png" />
+        <picture>
+            <source srcset="/assets/2024-01-23.webp" type="image/webp">
+            <!-- <source srcset="img.jpg" type="image/jpeg"> !-->
+            <img src="/assets/2024-01-23.webp" alt="Our Location">
+            
+        </picture>
     </div>
     <div class="contact_us flipped">
-        <img src="assets/placeholder2.png" />
+        <picture>
+            <source srcset="/assets/2023-11-15.webp" type="image/webp">
+            <!-- <source srcset="img.jpg" type="image/jpeg"> !-->
+            <img src="/assets/2023-11-15.webp" alt="Our Store">
+        </picture>
         <form id="quote_form" action="https://formspree.io/f/mwkyrblq" method="POST">
             <h1>Quote</h1>
             <fieldset>
@@ -248,43 +225,52 @@
         <img src="/assets/logo.png">
         <div id="footer_flex">
             <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7drcvMQQBYgRbcUZT51dOOI&key=AIzaSyAyAKAejN-nMXPXQvT5I0SzrpdpdKUbCk4"></iframe>
-            <ul>
-                <li><img src="assets/svg/location.svg" />Location</li>
-                <li>iRepairWireless</li>
-                <li>3920 South 27th Street</li>
-                <li>Milwaukee, WI 53221</li>
-                <li>Inside of Monterey Market</li>
-                <li>
-                    Follow Us On Social Media
-                    <a href="https://www.facebook.com/iRepairWireless1"><img src="assets/fb_logo.png" /></a>
-                    <a href="https://www.tiktok.com/@irepairwirelessllc"><img src="assets/tiktok-logo.png" /></a></li>
-            </ul>
-            <ul>
-                <li><img src="assets/svg/clock.svg" />Pinging Hours</li>
-                <li class="hoursLi mobileHide">Hours:</li>
-                <li class="hoursLi">Mon-Sat: 11am-6pm</li>
-                <li class="hoursLi">Sunday: 12pm-5pm</li>
-            </ul>
-            <div class="listContain">
+            <div class="footerLoc">
                 <ul>
-                    <li><img src="assets/svg/email.svg" />Email</li>
-                    <li><a href="mailto:iRepairWireless96@gmail.com">iRepairWireless96&#8203;@gmail.com</a></li>
+                    <li><img src="assets/svg/location.svg" />Locations</li>
+                    <li>iRepairWireless</li>
+                    <li>3920 South 27th Street</li>
+                    <li>Milwaukee, WI 53221</li>
+                    <li>Inside of Monterey Market</li>
+                    <li><hr></li>
+                    <li>iRepairWireless 2</li>
+                    <li>3514 W Burnham St Ste 100</li>
+                    <li>Milwaukee, WI 53215</li>
+                    <li>In El Rey Plaza</li>
                 </ul>
                 <ul>
-                    <li><img src="assets/svg/contact.svg" />Phone</li>
-                    <li><a href="tel:+14147632556">414-763-2556</a></li>
+                    <li><img src="assets/svg/clock.svg" />Pinging Hours</li>
+                    <li class="hoursLi">Hours:</li>
+                    <li class="hoursLi">Mon-Sat: 11am-6pm</li>
+                    <li class="hoursLi">Sunday: 12pm-5pm</li>
+                    <li>&nbsp;</li>
+                    <li><hr></li>
+                    <li class="hoursLi">Hours:</li>
+                    <li class="hoursLi">Mon-Sat: 11am-7pm</li>
+                    <li class="hoursLi">Sunday: Closed</li>
                 </ul>
             </div>
-            <!--<div class="footerRight">
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook-square"></i></i>iRepairWireless</a></li>
-                    <li><a href="mailto:iRepairWireless96@gmail.com"><i class="fa-solid fa-square-envelope"></i>iRepairWireless96&#8203;@gmail.com</a></li>
-                    <li><a href="tel:+14147632556"><i class="fa-solid fa-square-phone"></i>414-763-2556</a></li>
-                </ul>
-                <p>Copyright 2022 iRepairWireless</p>
-            </div>!-->
+            <ul id="footerWrp">
+                <li class="footerLnk xlHide">
+                    Follow Us:
+                    <a href="https://www.facebook.com/iRepairWireless1"><img src="assets/fb_logo.png" /></a>
+                    <a href="https://www.tiktok.com/@irepairwirelessllc"><img src="assets/tiktok-logo.png" /></a>
+                </li>
+                <li class="footerSoc">
+                    <ul>
+                        <li><img src="assets/svg/email.svg" />Email</li>
+                        <li><a href="mailto:iRepairWireless96@gmail.com">iRepairWireless96&#8203;@gmail.com</a></li>
+                    </ul>
+                </li>
+                <li class="footerSoc">
+                    <ul>
+                        <li><img src="assets/svg/contact.svg" />Phone</li>
+                    <li><a href="tel:+14147632556">414-763-2556</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <p>Copyright 2023 iRepairWireless</p>
+        <p>Copyright 2024 iRepairWireless</p>
     </footer>
 </body>
 </html>

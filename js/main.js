@@ -1,3 +1,3 @@
 window.onload = function () {
-    alert(window.innerWidth);
+    /*alert(window.innerWidth);*/
 }
