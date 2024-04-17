@@ -24,9 +24,6 @@ body{
     margin: 0px auto;
     text-align: center;
     /* color: #2f3f7d; */
-    background-image: linear-gradient(rgba(0,0,0,.2) 18%, rgba(253, 253, 253, 1) 21%), url("/assets/output_1.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 header nav, header div#landing, section{
@@ -34,11 +31,17 @@ header nav, header div#landing, section{
     margin: 0px auto;
 }
 
+div#bgWrap{
+    background:
+        linear-gradient(180deg, rgba(0,0,0,.7) 0%, rgba(255,255,255,.2) 85%, rgba(255,255,255,1) 100%),
+        url("../assets/1143573.jpg");
+    padding-bottom: 70px;
+}
+
 header{
-    padding: 10px 5% 0px 5%;
     /* background-color: #e8f9fe; */
     margin: 0px auto;
-    margin-bottom: 00px;
+    margin-bottom: 0px;
     overflow-y: hidden;
 }
 
@@ -46,6 +49,7 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 5% 0px 5%;
 }
 
 header nav img{
@@ -91,14 +95,16 @@ div#landing{
     display: flex;
     align-items: center;
     justify-content: space-between ;
-    padding-bottom: 20px;
+    padding: 10px 10px 20px 10px;
     color: rgb(245, 247, 244);
+    flex-basis: auto;
 }
 
 div#landingLeft{
     min-width: 380px;
     text-align: left;
     width: 45%;
+    margin-left: 10px;
 }
 
 div#landingLeft h1{
@@ -147,63 +153,38 @@ div#landingRight{
     width: 60%;
     min-height: 520px;
     max-width: 740px;
-}
-
-div#landingRight .landingContainer{
-    width: 100%;
+    background-image: url("../assets/landingPhone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
-    display: inline-block;
-    min-width: 580px;
 }
 
-div#landingRight .landingContainer #phoneBg{
-    background-color: #0eb3e1;
+div#landingRight .phoneBG{
     position: absolute;
-    left: 25%;
-    top: 10%;
-    width: 55%;
-    height: 120%;
-    z-index: 3;
-    transform: skewY(-5deg);
+    bottom: 20px;
+    left: 8%;
 }
 
-div#landingRight .landingContainer #phoneBg:after, div#landingRight #phoneBg:before {
-    display: block;
-    content: "";
-    color: transparent;
-    width: 105%;
-    height: 65px;
-    background: #e8f9fe;
-    position: absolute;
-    left: -10px;
-    bottom: -33px;
-    -webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    transform: rotate(10deg);
+div#landingRight .phoneBG #phoneBG_linkWrap{
+    
 }
 
-div#landingRight .landingContainer #phoneBG_linkWrap > a img{
+div#landingRight .phoneBG #phoneBG_linkWrap > a img{
     vertical-align: middle;
     margin-right: 10px;
+    animation: tilt-n-move-shaking 0.85s infinite;
 }
 
-div#landingRight .landingContainer #phoneBG_linkWrap > a{
-    position: absolute;
+div#landingRight .phoneBG #phoneBG_linkWrap > a{
     display: inline-block;
-    top: 82%;
-    right: 15%;
     padding: 20px 25px;
     background-color: white;
-    color: #0eb3e1;
+    /*color: #0eb3e1;*/
+    color: rgb(19, 19, 29);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #0eb3e177;
-    transition: box-shadow 1s;
+    box-shadow: 0px 0px 15px #0eb3e177;
     z-index: 4;
-    margin-right: 36%;
-}
-
-div#landingRight .landingContainer #phoneBG_linkWrap > a:hover{
-    box-shadow: 0px 0px 15px #0eb3e1;
+    text-decoration: none;
 }
 
 div#landingRight .landingContainer #phoneBG_linkWrap > a span{
@@ -224,73 +205,6 @@ div#landingRight .landingContainer > img{
 section{
     padding: 40px 5% 20px 5%;
 
-}
-section#about_us{
-    color: rgb(245, 247, 244);
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-section#about_us div#about_imgWrap{
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 500px;
-    margin: 0px;
-    align-content: flex-start;
-    gap: 10px;
-    position: relative;
-    margin-right: 10%;
-}
-
-/* section#about_us div#about_imgWrap img{
-    z-index: 5;
-} */
-section#about_us div#about_imgWrap picture{
-    width: 500px;
-}
-section#about_us div#about_imgWrap picture img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-section#about_us div#about_imgWrap > img.sideImg{
-
-}
-
-section#about_us div#about_imgWrap div{
-    display: block;
-    width: 480px;
-    height: 480px;
-    background-color: #e8f9fe;;
-    position: absolute;
-    z-index: 3;
-    right: -20px;
-    bottom: 25px;
-}
-
-section#about_us div#about_text{
-    text-align: left;
-    display: inline-flex;
-    vertical-align: top;
-    flex-direction: column;
-    width: 35%;
-}
-
-section#about_us div#about_text h2{
-    color: rgb(245, 247, 244);
-    text-shadow: 0px 0px 12px black;
-    font-size: 38px;
-}
-
-section#about_us div#about_text h1{
-    font-weight: bold;
-    font-size: 36px;
-}
-
-section#about_us div#about_text p{
-    font-size: 22px;
-    line-height: 30px;
-    text-shadow: 0px 0px 8px black;
 }
 
 section > h1{
@@ -314,13 +228,24 @@ section#our_services{
     background-image: linear-gradient(#fdfdfd 70%, #f9f9f9);
 }
 
-section#our_services div#services_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#bgWrap h2{
+    font-size: 42px;
+    margin-top: 0px;
+    margin-left: 20px;
+    width: 375px;
+    text-align: left;
+    color: white;
 }
 
-section#our_services div#services_wrapper div.service_box{
+div#services_wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    overflow-x: auto;
+    padding: 0px 15px;
+}
+
+div#services_wrapper div.service_box{
     /* background-color: #0eb3e1;
     color: #ffffff; */
     min-width: 245px;
@@ -328,34 +253,35 @@ section#our_services div#services_wrapper div.service_box{
     max-width: 262px;
     display: inline-block;
     padding: 50px 20px 30px 20px;
-    border-radius: 10px;;
-    box-shadow: 0px 5px 15px #0eb3e185;
+    border-radius: 10px;
+    background: white;;
+    box-shadow: 0px 5px 15px #0eb3e1dc;
     margin: 10px 5px;
 }
 
-section#our_services div#services_wrapper div.service_box > img{
+div#services_wrapper div.service_box > img{
     height: 60px;
     width: 80px;
     
 }
 
-section#our_services div#services_wrapper div.service_box h3{
+div#services_wrapper div.service_box h3{
     font-size: 24px;
 }
 
-section#our_services div#services_wrapper div.service_box ul{
+div#services_wrapper div.service_box ul{
     list-style-type: none;
     margin: 0px auto;
     padding: 0px;
     text-align: left;
 }
 
-section#our_services div#services_wrapper div.service_box ul li{
+div#services_wrapper div.service_box ul li{
     padding-bottom: 5px;
     color: rgba(77,77,77,1);
 }
 
-section#our_services div#services_wrapper div.service_box ul li img{
+div#services_wrapper div.service_box ul li img{
     width: 14px;
     height: 14px;
     vertical-align: top;
@@ -367,7 +293,6 @@ section#our_services #img_contain{
     position: relative;
     text-align: center;
     overflow-y: hidden;
-    min-width: 1042px;
     padding-bottom: 40px;
 }
 
@@ -522,7 +447,7 @@ section#repaired > a img{
 }
 
 section#faqs{
-    background-color: transparent;
+    padding-top: 30px;
 }
 
 section#faqs h1{
@@ -532,9 +457,11 @@ section#faqs h1{
 }
 
 section#faqs h2{
+    margin-top: 0px;
     font-family: Montserrat;
     margin-bottom: 5px;
     text-align: center;
+    font-size: 30px;
 }
 
 section#faqs div#faqs_contain{
@@ -580,7 +507,7 @@ section#reviews div.reviewHeading{
     padding-right: 40px;
 }
 
-section#reviews div.reviewHeading h1, h2{
+section#reviews div.reviewHeading h1, section#reviews div.reviewHeading h1 h2{
     margin: 0px !important
 }
 
@@ -628,19 +555,17 @@ div.contact_us{
 
 div.contact_us form{
     width: 50%;
-    margin-bottom: 55px;
-    padding-top: 35px;
+    margin-bottom: 35px;
+    padding-top: 20px;
 }
 
 div.contact_us form h1{
     font-weight: bold;
     font-size: 42px;
     display: inline-block;
-    margin: 15px auto;
-    width: 60%;
+    margin: 10px auto;
     text-align: left;
     position: relative;
-    left: -16px;
 }
 
 div.contact_us form fieldset{
@@ -656,7 +581,7 @@ input, textarea, select{
     border: 1px solid rgba(255, 255, 255, 0.6);
     padding: 15px 15px;
     margin: 15px auto 15px auto;
-    width: 60%;
+    width: 70%;
     color: white;
 }
 
@@ -666,7 +591,7 @@ input::placeholder, textarea::placeholder{
 
 div.contact_us form fieldset div.button_container{
     display: block;
-    width: 60%;
+    width: 70%;
     margin: 0px auto;
     position: relative;
     left: -16px;
@@ -682,8 +607,13 @@ div.contact_us form fieldset button{
     margin: 0px auto;
 }
 
-div.contact_us img{
+div.contact_us picture{
     width: 50%;
+}
+
+div.contact_us picture img{
+    width: 100%;
+    height: 100%;
 }
 
 div.contact_us.flipped{
@@ -694,19 +624,18 @@ div.contact_us.flipped{
 
 div.contact_us.flipped div.field_row{
     margin: 0px auto;
-    width: 65%;
+    width: 70%; 
     display: flex;
+    justify-content: center;
 }
 
 div.contact_us.flipped div.field_row select{
-    width: 50%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 10px;
+    margin: 0px;
+    min-width: 50%;
 }
 
 div.contact_us.flipped div.field_row select:last-child{
-    margin-right: 0px;
+    margin-left: 31px;
 }
 
 div.contact_us.flipped input, div.contact_us.flipped textarea, div.contact_us.flipped select{
@@ -719,7 +648,7 @@ div.contact_us.flipped input::placeholder, div.contact_us.flipped textarea::plac
 }
 
 footer{
-    min-width: 990px;
+    
 }
 
 footer img{
@@ -728,15 +657,20 @@ footer img{
 }
 
 footer div#footer_flex{
-    padding-top: 50px;
+    padding: 50px 20px;
     border-top: 1px solid rgba(0, 0, 0, .3);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+.footerLoc{
+    display: flex;
+}
+
 footer div#footer_flex iframe{
     margin-right: 15px;
+    margin-bottom: 15px;
     width: 220px;
     height: 200px;
 }
@@ -754,11 +688,7 @@ footer div#footer_flex > ul:first-of-type{
 }
 
 footer div#footer_flex > ul:first-of-type li:last-child{
-    margin-top: 50px;
-    width: 275px;
-    color: #2f3f7d;
-    font-size: 20px;
-    font-weight: bold;
+    
 }
 
 footer div#footer_flex > ul:first-of-type li:last-child a{
@@ -775,17 +705,16 @@ footer div#footer_flex > ul:first-of-type li:last-child a img{
 footer div#footer_flex ul li:first-child{
     color: #2f3f7d;
     font-weight: bold;
-    font-size: 20px;
-    padding-bottom: 5px;
+    font-size: 24px;
     padding-left: 0px !important;
 }
 
 footer div#footer_flex ul li img{
-    width: 25px;
+    width: 30px;
     height: 30px;
     margin-bottom: 5px;
-    margin-right: 10px;
-    vertical-align: top;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 footer div#footer_flex ul li{
@@ -794,28 +723,49 @@ footer div#footer_flex ul li{
     color: #4d4d4d;
     font-size: 16px;
     font-family: Montserrat;
+    width: 100%;
 }
 
-footer div#footer_flex div.listContain ul{
-    margin-bottom: 25px;
+footer div#footer_flex ul li.footerLnk a:first-child{
+    margin-left: 5px;
 }
 
-footer div#footer_flex ul.socialLinks li{
-    padding: 0px;
-    margin-bottom: 15px;
+footer div#footer_flex ul li.footerLnk img{
+    width: 35px;
+    height: 35px;
 }
 
-footer div#footer_flex ul.socialLinks img{
-    width: 42px;
-    height: 42px;
-    margin: 0px;
+footer div#footer_flex ul li.footerSoc{
+    padding-left: 0px;
+}
+
+footer div#footer_flex ul li.footerSoc ul li{
+    padding-left: 40px;
+    margin-bottom: 0px;
+}
+
+footer div#footer_flex ul li.footerSoc ul li a{
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+footer div#footer_flex ul li.footerSoc img{
+    margin-right: 10px;
 }
 
 footer > p{
-  margin: 50px auto 0px auto;
+  margin: 0px auto;
   font-size: 22px;
   color: rgb(0, 0 , 0, .35);
   background-color: rgba(232,249,254,1);
   font-weight: normal;
   padding: 15px 0px;
 }
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(2px, 2px) rotate(3deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-2px, 2px) rotate(-3deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
