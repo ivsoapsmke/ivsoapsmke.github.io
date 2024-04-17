@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-.mobileShow{
-    display: none !important;
-}
-
-.tabletShow{
-    display: none !important;
-}
-
-
 h1, h2{
     font-family: 'Open Sans', Roboto Slab, sans-serif;
     font-weight: normal;
