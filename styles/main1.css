@@ -34,7 +34,7 @@ header nav, header div#landing, section{
 div#bgWrap{
     background:
         linear-gradient(180deg, rgba(0,0,0,.7) 0%, rgba(255,255,255,.2) 85%, rgba(255,255,255,1) 100%),
-        url("../assets/1143573.jpg");
+        url("../assets/bg.jpg");
     padding-bottom: 70px;
 }
 
