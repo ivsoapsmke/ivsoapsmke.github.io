@@ -1,0 +1,25 @@
+section#about_us{
+    flex-direction: column;
+}
+
+section#about_us picture{
+    display: flex;
+    flex-basis: 90%;
+    justify-content: center;
+}
+
+section#about_us picture img{
+    max-width: 500px;
+}
+
+footer .contain .footerCol a#footerLogo img{
+    width: 80px;
+}
+
+footer .contain .footerCol a#footerLogo h1{
+    font-size: 26px;
+}
+
+footer .contain .footerCol h2{
+    font-size: 26px;
+}

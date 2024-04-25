@@ -1,0 +1,40 @@
+nav .contain{
+    padding: 8px 3%;
+}
+
+nav .contain a h1{
+    font-size: 22px;
+}
+
+header{
+    margin-top: 82px;
+}
+
+footer{
+    padding: 15px 3%;
+}
+
+footer .contain .footerCol a#footerLogo img{
+    width: 50px;
+}
+
+footer .contain .footerCol a#footerLogo h1{
+    font-size: 22px;
+}
+
+footer .contain .footerCol a#footerLogo p{
+    font-size: 14px;
+}
+
+footer .contain .footerCol h2{
+    font-size: 22px;
+}
+
+footer .contain .footerCol h3{
+    font-size: 14px;
+}
+
+footer .contain .footerCol #footerSocial a svg{
+    width: 25px;
+    height: 25px;
+}

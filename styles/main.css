@@ -78,6 +78,10 @@ nav .contain #menu a{
     left: 5%;
 }
 
+nav .contain #menu a:hover{
+    color: rgb(203, 64, 157); 
+}
+
 nav .contain #menu a svg{
     width: 1.5rem;
     height: 1.5rem;
@@ -86,8 +90,7 @@ nav .contain #menu a svg{
 header{
     position: relative;
     height: 100%;
-    height: fit-content;
-    margin-top: 88px;
+    margin-top: 89px;
 }
 
 header section{
@@ -109,7 +112,7 @@ header section h2{
     font-size: 3.75rem;
     letter-spacing: -2px;
     margin-bottom: 0px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     color: white;
 }
 
@@ -150,11 +153,16 @@ section#about_us{
     justify-content: center;
 }
 
+section#about_us picture{
+    /*display: flex;*/
+}
+
 section#about_us img{
     border-radius: 10px;
-    width: 88%;
+    /*width: 88%;*/
     box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.3);
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
+    max-width: 368px;
 }
 
 section h1{
@@ -166,7 +174,8 @@ section h1{
 
 section#about_us .right{
     margin-left: 5rem;
-    max-width: 60%;
+    /*max-width: 60%;*/
+    flex-basis: 55%;
 }
 
 section#about_us .right p{
@@ -176,7 +185,6 @@ section#about_us .right p{
 
 section#our_soap{
     padding-top: 3rem;
-    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -194,9 +202,10 @@ section#our_soap h2{
 
 section#our_soap #soaps{
     justify-content: center;
-    border-top: 1px solid rgba(2,0,36, .3);
+    /*border-top: 1px solid rgba(2,0,36, .3);*/
     /*border-bottom: 1px solid rgba(2,0,36, .3);*/
-    padding-top: 10px
+    padding-top: 10px;
+    padding-bottom: 3rem;
 }
 
 section#our_soap #soaps .soapBar{
@@ -209,8 +218,17 @@ section#our_soap #soaps .soapBar img{
 
 section#our_soap #soaps .soapBar h1{
     font-size: 34px;
-    margin-top: 1rem;
+    margin-top: .8rem;
     font-weight: 500;
+    position: relative;
+}
+
+section#our_soap #soaps .soapBar h1 span{
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    height: 15px;
+    opacity: .8;
 }
 
 section#our_soap #soaps .soapBar > p{
@@ -222,7 +240,7 @@ section#our_soap #soaps .soapBar > p{
 section#our_soap #soaps .soapBar .buybar{
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     max-width: 70%;
     margin: 0px auto;
     font-family: sans-serif;
@@ -232,6 +250,43 @@ section#our_soap #soaps .soapBar .buybar a{
     margin-left: auto;
     font-weight: 550;
     text-decoration: underline;
+}
+
+section#our_soap #soapCheckout{
+    margin-bottom: 2rem;
+    /*height: 0px;*/
+    overflow: hidden;
+    transition: height 1s;
+}
+
+section#our_soap #soapCheckout:hover{
+    height: 53.6px;
+}
+
+section#our_soap #soapCheckout a{
+    font-size: 26px;
+    padding: 8px 25px;
+    border-bottom: 2px solid rgba(77, 77, 79, 0.4);
+    display: inline-block;
+    /*background-color: rgba(203, 64, 157, .5);*/
+    opacity: .7;
+    cursor: pointer;
+    transition: margin-left 2s, opacity 2s;
+}
+
+section#our_soap #soapCheckout a:hover{
+    /*opacity: 0;
+    margin-left: -400px;*/
+    opacity: 1;
+}
+
+section#our_soap #soapCheckout a img{
+    vertical-align: bottom;
+    width: 35px;
+}
+
+section#our_soap #soapCheckout a span{
+    margin-right: 10px;
 }
 
 section#contact_us1{
@@ -279,6 +334,7 @@ section#contact_us form fieldset{
     border: 0px solid transparent;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     display: grid;
+    margin: 0px;
 }
 
 .contactField{
@@ -303,21 +359,23 @@ section#contact_us form fieldset{
 }
 
 section#contact_us form button{
-    width: 100%;
-    display: block;
-    max-width: 56rem;
-    margin: 0px auto;
-    border-style: hidden;
+    grid-column: span 2;
+    margin: 0px .55rem;
+    border: 2px solid transparent;
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 18px;
+    cursor: pointer;
+}
+
+section#contact_us form button:hover{
+    border: 2px solid rgba(77, 77, 79, 0.8);
 }
 
 footer{
     background-color: rgb(17 24 39);
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 15px 5%;
 }
 
 footer .contain{
@@ -362,12 +420,13 @@ footer .contain .footerCol.contact{
 
 footer .contain .footerCol h2{
     font-size: 32px;
-    margin-top: 16px;
+    margin: 16px 0px;
+    text-align: right;
 }
 
 footer .contain .footerCol h3{
-    margin-left: 15px;
     text-align: right;
+    margin: 8px 0px 8px 15px;
 }
 
 footer .contain .footerCol h3 span{
@@ -388,6 +447,7 @@ footer .contain .footerCol #footerSocial a{
 
 footer .contain .footerCol #footerSocial a svg{
     width: 40px;
+    height: 40px;
     color: white;
     vertical-align: bottom;
 }
