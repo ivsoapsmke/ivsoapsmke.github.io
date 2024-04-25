@@ -11,6 +11,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" media="(max-width:1024px)" href="styles/mobileXL.css">
+        <link rel="stylesheet" media="(max-width:768px)" href="styles/mobile.css">
+        <link rel="stylesheet" media="(max-width:650px)" href="styles/mobileS.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,16 +21,16 @@
         <![endif]-->
         <nav>
             <div class="contain">
-                <a>
+                <a href="/">
                     <img src="assets/logo1.png" />
                     <h1>IV Soaps MKE</h1>
                 </a>
                 <div id="menu">
-                    <a>About Us</a>
-                    <a>Shop</a>
-                    <a>Contact Us</a>
-                    <a>414-614-3780</a>
-                    <a class="mobileShow">
+                    <a href="#about_us">About Us</a>
+                    <a href="#our_soap">Shop</a>
+                    <a href="#contact_btn">Contact Us</a>
+                    <a class="mobileHide">414-614-3780</a>
+                    <a class="mobileShow" style="display: none !important;">
                         <svg class="" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
                         </svg>
@@ -46,7 +49,7 @@
             <section>
                 <h2>Handcrafted Soaps</h2>
                 <p>Discover the magic of our handcrafted soaps, made with natural ingredients for a gentle and nourishing cleanse. Perfect for all skin types.</p>
-                <a class="contactBtn">Contact Us</a>
+                <a href="#contact_btn" class="contactBtn">Contact Us</a>
             </section>
         </header>
         <section id="about_us" class="">
@@ -61,55 +64,72 @@
         </section>
         <section id="our_soap">
             <h1>Our Soaps</h1>
-            <h2>We provide a range of high-quality soaps. We regularily rotate our stock with new scents. Check out our current offerings or contact us to get more information on our custom blends.</h2>
+            <h2>Our current offerings are Honey Oatmeal(Unscented), Shea Oatmeal, Bay Rum, and Ocean breeze. We regularily rotate our stock with new scents. Check out our inventory below or contact us to get more information on our custom blends.</h2>
             <div class="contain" id="soaps">
                 <div class="soapBar">
                     <picture>
                         <img class="" src="assets/bars/bar.png">
                     </picture>
-                    <h1>Honey Oatmeal</h1>
-                    <p>Olive, Coconut Oil, Shea Butter, Honey, Oatmeal. Unscented.</p>
+                    <h1><span>(Unscented)</span>Honey Oatmeal</h1>
+                    <p>Olive, Coconut Oil, Shea Butter, Honey, Oatmeal.</p>
+                    <div class="buybar">
+                        <p>$8 / bar</p>
+                        <a>Buy</a>
+                    </div>
+                </div>
+                <div class="soapBar">
+                    <picture>
+                        <img class="" src="assets/bars/bar2.png">
+                    </picture>
+                    <h1><span></span>Shea Oatmeal</h1>
+                    <p>Olive, Coconut Oil, Shea Butter, Honey, Oatmeal, Fragrance.</p>
                     <div class="buybar">
                         <p>$8 / bar</p>
                         <a>Buy</a>
                     </div>
                 </div>
             </div>
+            <div id="soapCheckout">
+                <a>
+                    <img src="assets/shopping-cart.png">
+                    <span>(1)</span>Checkout
+                </a>
+            </div>
         </section>
         <section id="contact_us1">
             <h2>Got questions about bulk pricing, custom soap scents, party gift packs, samples and more? Don't hesitate to contact us! We're here to help you with all your soap needs.</h2>
-            <a class="contactBtn">414-614-3780</a>
+            <a href="" id="contact_btn" class="contactBtn">414-614-3780</a>
         </section>
         <section id="contact_us">
             <h1>Contact Us</h1>
-            <form>
+            <form method="post" action="https://formspree.io/f/xqkrwjpv">
                 <div class="contain">
-                <fieldset>
-                    <div class="contactField">
-                        <label for="name">Name<span> *</span></label>
-                        <input id="name" name="name" type="text">
-                    </div>
-                    <div class="contactField">
-                        <label for="email">Email<span> *</span></label>
-                        <input id="email" name="email" type="email">
-                    </div>
-                    <div class="contactField">
-                        <label for="phone">Phone Number</label>
-                        <input id="phone" name="phone" type="tel">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="contactField">
-                        <label for="subject">Subject<span> *</span></label>
-                        <input id="subject" name="subject" type="text">
-                    </div>
-                    <div class="contactField">
-                        <label for="msg">Message<span> *</span></label>
-                        <textarea id="msg" name="msg" rows="4"></textarea>
-                    </div>
-                </fieldset>
+                    <fieldset>
+                        <div class="contactField">
+                            <label for="name">Name<span> *</span></label>
+                            <input id="name" name="name" type="text">
+                        </div>
+                        <div class="contactField">
+                            <label for="email">Email<span> *</span></label>
+                            <input id="email" name="email" type="email">
+                        </div>
+                        <div class="contactField">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="tel">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="contactField">
+                            <label for="subject">Subject<span> *</span></label>
+                            <input id="subject" name="subject" type="text">
+                        </div>
+                        <div class="contactField">
+                            <label for="message">Message<span> *</span></label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="contactBtn">Lets Talk</button>
                 </div>
-                <button class="contactBtn">Lets Talk</button>
             </form>
         </section>
         <footer>
@@ -123,12 +143,13 @@
                             <p>Serving Nature's Best for Your Bath and Body Experience</p>
                         </div>
                     </a>
-                    <h4>&#169 IV Soaps Mke. All rights reserved.</h4>
+                    <h4>&#169 2024 IV Soaps Mke. All rights reserved.</h4>
                 </div>
                 <div class="footerCol contact">
                     <h2>Connect with us</h2>
                     <h3><span>Van:</span>414-123-1234</h3>
                     <h3><span>Iggy:</span>414-123-1234</h3>
+                    <h3>sales@ivsoapsmke.com</h3>
                     <div id="footerSocial">
                         <a>
                             <svg class="facebook" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
