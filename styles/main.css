@@ -7,6 +7,11 @@
     src: url("fonts/Open_Sans/OpenSans-VariableFont_wght.ttf") format('truetype');
 }
 
+.disabledElem{
+    opacity: .3 !important;
+    text-decoration: line-through !important;
+}
+
 a:cl{
     color: white;
 }
@@ -90,7 +95,7 @@ nav .contain #menu a svg{
 header{
     position: relative;
     height: 100%;
-    margin-top: 89px;
+    margin-top: 88.48px;
 }
 
 header section{
@@ -206,6 +211,7 @@ section#our_soap #soaps{
     /*border-bottom: 1px solid rgba(2,0,36, .3);*/
     padding-top: 10px;
     padding-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 section#our_soap #soaps .soapBar{

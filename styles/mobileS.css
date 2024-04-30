@@ -6,9 +6,31 @@
     display: flex !important;
 }
 
+nav .contain a img {
+    margin-right: 10px;
+}
+
+nav .contain a h1{
+    font-size: 18px;
+}
+
+nav .contain #menu a {
+    left: 0px;
+    right: 0px;
+    padding: 10px 8px;
+}
+
+header{
+    margin-top: 70.68px;
+}
+
 header section {
     padding-top: 3rem;
     padding-bottom: 4rem;
+}
+
+header section h2{
+    font-size: 2.7rem;
 }
 
 section#about_us picture img{
