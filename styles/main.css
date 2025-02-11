@@ -112,13 +112,12 @@ header section{
 }
 
 header section h2{
-    display: inline-block;
     font-weight: bold;
     font-size: 3.75rem;
     letter-spacing: -2px;
-    margin-bottom: 0px;
-    /*white-space: nowrap;*/
+    margin: 0px;
     color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 header section p{
@@ -128,6 +127,7 @@ header section p{
     max-width: 632px;
     margin-bottom: 40px;
     margin-top: 5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 
 .contactBtn{
@@ -148,6 +148,36 @@ video{
     object-fit: cover;
     height: min-content;
     height: 100%;
+}
+
+section#ingredients{
+    padding: 5rem 4rem 1rem 4rem;
+}
+
+section#ingredients .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+/*section#ingredients .row:nth-child(2){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+section#ingredients .row:nth-child(2) img{
+    margin-right: 0px;
+    margin-left: 80px;
+}*/
+
+section#ingredients .row .row_img img{
+    width: 240px;
+    margin-right: 80px;
+}
+
+section#ingredients .row .row_desc{
+    flex-basis: 70%;
 }
 
 section#about_us{
