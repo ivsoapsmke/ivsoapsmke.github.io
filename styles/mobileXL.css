@@ -12,6 +12,11 @@ section#about_us picture img{
     max-width: 500px;
 }
 
+section#our_soap h2{
+    font-size: 1rem;
+    width: 90%;
+}
+
 footer .contain .footerCol a#footerLogo img{
     width: 80px;
 }

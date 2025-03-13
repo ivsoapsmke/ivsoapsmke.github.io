@@ -1,10 +1,17 @@
 @font-face {
     font-family: 'Montes';
     src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'OpenSans';
     src: url("fonts/Open_Sans/OpenSans-VariableFont_wght.ttf") format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair';
+    src: url("fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format('truetype');
+    font-display: swap;
 }
 
 .disabledElem{
@@ -117,6 +124,7 @@ header section h2{
     letter-spacing: -2px;
     margin: 0px;
     color: white;
+    font-family: 'Playfair', sans-serif;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -150,15 +158,34 @@ video{
     height: 100%;
 }
 
+h1#ingredientsHead{
+    font-family: 'Playfair', sans-serif;
+    margin: 0px auto;
+    padding: 2.5rem 0rem 1.5rem 0rem;
+    font-size: 4rem;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(17 24 39);
+} 
+
+h1#ingredientsHead span{
+    letter-spacing: -3px;
+    padding-right: 8px;
+}
+
+hr{
+    width: 70%;
+    border-top: 1px solid rgb(17 24 39);
+}
+
 section#ingredients{
-    padding: 5rem 4rem 1rem 4rem;
+    padding: 3rem 4rem 4rem 4rem;
 }
 
 section#ingredients .row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 4rem;
 }
 
 /*section#ingredients .row:nth-child(2){
@@ -171,13 +198,32 @@ section#ingredients .row:nth-child(2) img{
     margin-left: 80px;
 }*/
 
+section#ingredients .row .row_img, section#ingredients .row .row_title{
+    flex-basis: 17%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
 section#ingredients .row .row_img img{
-    width: 240px;
-    margin-right: 80px;
+    max-width: 100%;
+}
+
+section#ingredients .row .row_title{
+    justify-content: center;
+}
+
+section#ingredients .row .row_title h1{
+    font-family: 'Playfair', sans-serif;
+    font-weight: lighter;
+    font-size: 1.9rem;
+}
+
+section#ingredients .row p{
+    font-size: 1.2rem;
 }
 
 section#ingredients .row .row_desc{
-    flex-basis: 70%;
+    
 }
 
 section#about_us{
@@ -219,12 +265,15 @@ section#about_us .right p{
 }
 
 section#our_soap{
-    padding-top: 3rem;
+    padding-top: 0rem;
     text-align: center;
 }
 
 section#our_soap h1{
+    margin-top: 1.5rem;
     margin-bottom: 5px;
+    font-family: 'Playfair', sans-serif;
+    font-size: 3rem;
 }
 
 section#our_soap h2{
