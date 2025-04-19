@@ -8,20 +8,14 @@ async function fetchAsync (productsUrl) {
 
 async function getProducts() {
     const productsData = await fetchAsync(productsUrl);
-    console.log(productsData);
-
-    for (const p in productsData) {
-        console.log(p.name);
-        /*if (productsData.hasOwnProperty(key)) {
-            console.log(`Key: ${key}, Value:`, productsData[key]);
-        } else{
-            for (const product of productsData) {
-                console.log(product);
-            }
-        }*/
+    for (const product in productsData) {
+        createProduct(productsData[product]);
     }
     
 }
 
-getProducts();
+function createProduct(p) {
+    console.log(p);
+}
 
+getProducts();
