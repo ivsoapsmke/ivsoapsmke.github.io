@@ -1,4 +1,6 @@
 const productsUrl = "https://checkout.ivsoapsmke.com/checkout.php?products=all";
+const productElement = document.getElementsByClassName('soapBar')[0];
+var clonedProduct;
 
 async function fetchAsync (productsUrl) {
     let response = await fetch(productsUrl);
@@ -9,12 +11,12 @@ async function fetchAsync (productsUrl) {
 async function getProducts() {
     const productsData = await fetchAsync(productsUrl);
     for (const product in productsData) {
-        createProduct(productsData[product]);
+        clonedProduct = productElement.cloneNode(true);
+        createProduct(productsData[product], clonedProduct);
     }
-    
 }
 
-function createProduct(p) {
+function createProduct(p, c) {
     console.log(p);
 }
 
