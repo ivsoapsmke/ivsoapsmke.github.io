@@ -25,7 +25,7 @@ function createProduct(p, c) {
     c.querySelector('.soap-desc').innerHTML = p.description;
     for(let x = 0; x < p.images.length; x++){
         c.querySelector('.soap-pic').src = p.images[x];
-        c.querySelector('.soap-pic').alt = p.name + " Bar Picture;
+        c.querySelector('.soap-pic').alt = p.name + " Bar Picture";
     }
     productContainer.appendChild(c);
     console.log(c);
