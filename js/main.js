@@ -20,13 +20,26 @@ async function getProducts(e) {
 
 function createProduct(p, c) {
     console.log(p);
-    c.querySelector('.soap-name').innerHTML = p.name;
+    let scented = "";
+
+    c.id = p.default_price;
     c.querySelector('.soap-price').innerHTML = "$"+ p.price +" / bar";
     c.querySelector('.soap-desc').innerHTML = p.description;
-    for(let x = 0; x < p.images.length; x++){
+    for (var meta in p.metadata) {
+        if (p.metadata.hasOwnProperty(meta)){
+            if (meta == 'Scent' && p.metadata[meta] == 'Unscented') {
+                scented = "<span>(Unscented)</span>";
+            }
+        }
+    }
+    for (let x = 0; x < p.images.length; x++){
         c.querySelector('.soap-pic').src = p.images[x];
         c.querySelector('.soap-pic').alt = p.name + " Bar Picture";
     }
+
+    c.querySelector('.soap-name').innerHTML = scented+p.name;
+    c.querySelector('.soap-buy').addEventListener("click", addToCart(p.default_price, 1));
+    
     productContainer.appendChild(c);
     console.log(c);
 }
