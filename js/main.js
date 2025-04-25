@@ -20,7 +20,7 @@ async function getProducts(e) {
 
 function createProduct(p, c) {
     console.log(p);
-    let scented = "";
+    let scented = "<span></span>";
 
     c.id = p.default_price;
     c.querySelector('.soap-price').innerHTML = "$"+ p.price +" / bar";
