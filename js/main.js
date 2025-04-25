@@ -38,7 +38,7 @@ function createProduct(p, c) {
     }
 
     c.querySelector('.soap-name').innerHTML = scented+p.name;
-    c.querySelector('.soap-buy').addEventListener("click", addToCart(p.default_price, 1));
+    c.querySelector('div a.soap-buy').addEventListener("click", addToCart(p.default_price, 1));
     
     productContainer.appendChild(c);
     console.log(c);
