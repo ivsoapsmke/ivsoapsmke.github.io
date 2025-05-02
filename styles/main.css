@@ -331,6 +331,13 @@ section#our_soap #soaps .soapBar .buybar{
     font-family: sans-serif;
 }
 
+section#our_soap #soaps .soapBar .noBuybar{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+
 section#our_soap #soaps .soapBar .buybar a{
     margin-left: auto;
     font-weight: 550;
