@@ -16,6 +16,12 @@ async function getProducts(e) {
         createProduct(productsData[product], clonedProduct);
     }
     productElement.style.display = "none";
+
+    document.querySelectorAll(".soap-buy").forEach(function(elem) {
+        elem.addEventListener("click", function() {
+            editCart(this.id, 1, "add");
+        });
+    });
 }
 
 function createProduct(p, c) {
@@ -27,8 +33,14 @@ function createProduct(p, c) {
     c.querySelector('.soap-desc').innerHTML = p.description;
     for (var meta in p.metadata) {
         if (p.metadata.hasOwnProperty(meta)){
+            // Turn to switch statement
             if (meta == 'Scent' && p.metadata[meta] == 'Unscented') {
                 scented = "<span>(Unscented)</span>";
+            }
+            if (meta ==  "Stock" && p.metadata[meta] < 1>){
+                c.querySelector('.buybar').style.display = "none";
+                c.querySelector('.noBuybar').style.display = "inline-block";
+                c.style.opacity = ".5";
             }
         }
     }
@@ -45,9 +57,3 @@ function createProduct(p, c) {
 }
 
 getProducts(productElement);
-
-document.querySelectorAll(".soap-buy").forEach(function(elem) {
-    elem.addEventListener("click", function() {
-        editCart(this.id, 1, 'add');
-    });
-});
