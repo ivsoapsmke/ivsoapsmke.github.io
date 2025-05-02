@@ -37,7 +37,7 @@ function createProduct(p, c) {
             if (meta == 'Scent' && p.metadata[meta] == 'Unscented') {
                 scented = "<span>(Unscented)</span>";
             }
-            if (meta ==  "Stock" && p.metadata[meta] < 1>){
+            if (meta ==  "Stock" && p.metadata[meta] < 1){
                 c.querySelector('.buybar').style.display = "none";
                 c.querySelector('.noBuybar').style.display = "inline-block";
                 c.style.opacity = ".5";
