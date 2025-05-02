@@ -22,7 +22,7 @@ function createProduct(p, c) {
     console.log(p);
     let scented = "<span></span>";
 
-    c.id = p.default_price;
+    c.id = "elem_"+p.default_price;
     c.querySelector('.soap-price').innerHTML = "$"+ p.price +" / bar";
     c.querySelector('.soap-desc').innerHTML = p.description;
     for (var meta in p.metadata) {
@@ -38,10 +38,17 @@ function createProduct(p, c) {
     }
 
     c.querySelector('.soap-name').innerHTML = scented+p.name;
-    c.querySelector('div.buybar .soap-buy').addEventListener("click", addToCart(p.default_price, 1));
+    c.querySelector('.soap-buy').id = p.default_price;
+    c.getElementById(p.default_price).addEventListener("click", addToCart(this.id, 1));
     
     productContainer.appendChild(c);
     console.log(c);
 }
 
 getProducts(productElement);
+
+document.querySelectorAll(".soap-buy").forEach(function(elem) {
+    elem.addEventListener("click", function() {
+        addToCart(this.id);
+    });
+});
