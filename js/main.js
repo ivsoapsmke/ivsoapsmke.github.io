@@ -47,8 +47,8 @@ function createProduct(p, c) {
 
 getProducts(productElement);
 
-document.querySelectorAll(".soap-buy").forEach(function(elem) {
+/*document.querySelectorAll(".soap-buy").forEach(function(elem) {
     elem.addEventListener("click", function() {
         addToCart(this.id);
     });
-});
+});*/
