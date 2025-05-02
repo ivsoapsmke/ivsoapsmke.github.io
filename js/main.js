@@ -39,7 +39,6 @@ function createProduct(p, c) {
 
     c.querySelector('.soap-name').innerHTML = scented+p.name;
     c.querySelector('.soap-buy').id = p.default_price;
-    c.getElementById(p.default_price).addEventListener("click", addToCart(this.id, 1));
     
     productContainer.appendChild(c);
     console.log(c);
@@ -47,8 +46,8 @@ function createProduct(p, c) {
 
 getProducts(productElement);
 
-/*document.querySelectorAll(".soap-buy").forEach(function(elem) {
+document.querySelectorAll(".soap-buy").forEach(function(elem) {
     elem.addEventListener("click", function() {
-        addToCart(this.id);
+        editCart(this.id, 1, 'add');
     });
-});*/
+});
