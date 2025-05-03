@@ -299,6 +299,7 @@ section#our_soap #soaps .soapBar{
 
 section#our_soap #soaps .soapBar img{
     width: 280px;
+    max-height: 260px;
 }
 
 section#our_soap #soaps .soapBar h1{
